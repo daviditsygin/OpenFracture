@@ -104,6 +104,7 @@ public class Slice : MonoBehaviour
         fragmentRigidBody.drag = thisRigidBody.drag;
         fragmentRigidBody.angularDrag = thisRigidBody.angularDrag;
         fragmentRigidBody.useGravity = thisRigidBody.useGravity;
+        fragmentRigidBody.interpolation = thisRigidBody.interpolation;
     
         // If refracturing is enabled, create a copy of this component and add it to the template fragment object
         if (this.sliceOptions.enableReslicing &&

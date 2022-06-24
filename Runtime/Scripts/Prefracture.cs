@@ -119,6 +119,7 @@ public class Prefracture : MonoBehaviour
         rigidBody.drag = this.GetComponent<Rigidbody>().drag;
         rigidBody.angularDrag = this.GetComponent<Rigidbody>().angularDrag;
         rigidBody.useGravity = this.GetComponent<Rigidbody>().useGravity;
+        rigidBody.interpolation = this.GetComponent<Rigidbody>().interpolation;
 
         var unfreeze = obj.AddComponent<UnfreezeFragment>();
         unfreeze.unfreezeAll = prefractureOptions.unfreezeAll;
